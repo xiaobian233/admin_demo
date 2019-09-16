@@ -130,11 +130,11 @@
 
                 }
             }
-            // await obj.one()
-            // await obj.two()   
-            // await obj.three()
-            // await obj.four()
-            // await obj.five()
+            await obj.one()
+            await obj.two()   
+            await obj.three()
+            await obj.four()
+            await obj.five()
             await obj.six()
 
 
