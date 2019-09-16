@@ -7,6 +7,9 @@ Vue.use(Router)
 const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
+  scrollBehavior(to, from, savedPosition) { //默认进入位置
+    return { x: 0, y:0 };
+  },
   routes: [
     {
       path: "/",
@@ -39,9 +42,7 @@ const router = new Router({
       redirect: "/404"
     }
   ],
-  scrollBehavior(to, from, savedPosition) { //默认进入位置
-    return { x: 0, y: 0 }
-  }
+ 
 })
 
 //取消router跳转警告
@@ -72,3 +73,9 @@ router.beforeEach((to, from, next) => {
     }
   }
 })
+//全局后置钩子
+router.afterEach((to, from, next) => {
+  setTimeout(function() {
+         window.scrollTo(0, 0)
+     },100)
+ })

@@ -18,7 +18,7 @@
         <div id="bge_carl"></div>
         <br>
         <h3>echarts社区图 == 没得背景画布</h3>
-        <div id="background"></div>
+        <div id="background"  :style="style" ref="background"></div>
     </div>
 </template>
 
@@ -35,6 +35,10 @@
                 type: 'bar',
                 productNamesList: ['商品1', '商品2', '商品3', '商品4',],
                 productSalesCountList: [1, 2, 4, 6],
+                style:{
+                    height:"888px",
+                    width:"888px"
+                }
             }
         },
         mounted() {
@@ -58,6 +62,7 @@
                 this.$chart.punch("punch")
                 this.$chart.bge_carl("bge_carl")
                 this.$chart.background("background")
+
         }
     }
 </script>
@@ -92,9 +97,9 @@
             width:800px;
             height: 800px;
         }
-        #background{
+        /* #background{
             width: 800px;
             height: 800px;
-        }
+        } */
     }
 </style>

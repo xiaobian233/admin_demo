@@ -957,7 +957,6 @@ const install = function (Vue) {
                         };
                         this.chart.setOption(option);
                     }
-
                 }
             }
         }
