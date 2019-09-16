@@ -44,7 +44,7 @@
         <h3>捕获异常:let a=1,i=0; ----- try(){ a=2;b=0;i++ }catch(){ i++ }finally(){ i++ } //i=3</h3>
         <br>
         <h3>10.九九乘法表--/--冒泡排序</h3>
-
+        <br>
 
 
 
@@ -309,8 +309,6 @@
                         }
                     }
                     console.log(arr);
-                    
-                    
 
 
 
@@ -322,19 +320,16 @@
 
                 },
 
-
-
-
             }
-            // await obj.one()
-            // await obj.two()   
-            // await obj.three()
-            // await obj.four()
-            // await obj.five()
-            // await obj.six()
-            // await obj.seven()
-            // await obj.eight()
-            // await obj.nine()
+            await obj.one()
+            await obj.two()   
+            await obj.three()
+            await obj.four()
+            await obj.five()
+            await obj.six()
+            await obj.seven()
+            await obj.eight()
+            await obj.nine()
             await obj.ten()
 
 

@@ -37,7 +37,7 @@
                 productSalesCountList: [1, 2, 4, 6],
                 style:{
                     height:"888px",
-                    width:"888px"
+                    width:"888px",
                 }
             }
         },
