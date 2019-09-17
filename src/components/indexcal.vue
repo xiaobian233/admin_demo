@@ -60,7 +60,7 @@
                 this.$router.push("/login")
             },
             show(v){
-                console.log(v);
+                console.log(v,"indexcal");
             }
         },
         components: { leftCebian }

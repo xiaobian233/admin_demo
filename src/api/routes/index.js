@@ -7,7 +7,7 @@ export const users = (obj) => {
             oo = [
                 {
                     id: "1",
-                    name: "权限路由1",
+                    name: "基本复习",
                     path: "user1",
                     icon: "el-icon-menu",
                     children: [
@@ -102,52 +102,58 @@ export const users = (obj) => {
                 {
                     id: "1",
                     path: "user1",
-                    name: "权限路由1",
+                    name: "基本复习",
                     icon: "el-icon-menu",
                     children: [
                         {
                             id: "1-1",
-                            pid: "1",
                             name: "Vue/Cil配置项",
+                            pid: "1",
                             path: "user1-1",
 
                         },
                         {
                             id: "1-2",
+                            name: "echarts/betterScroll",
                             pid: "1",
-                            name: "权限路由1-2",
                             path: "user1-2",
                         },
                         {
                             id: "1-3",
+                            name: "js方法",
                             pid: "1",
-                            name: "权限路由1-3",
                             path: "user1-3"
+                        },
+                        {
+                            id: "1-4",
+                            name: "less使用",
+                            pid: "1",
+                            path: "user1-4"
                         }
                     ]
                 },
                 {
                     id: "2",
                     path: "user2",
-                    name: "权限路由2",
+                    name: "Vue/Api",
                     icon: "el-icon-data-board",
                     children: [
                         {
                             id: "2-1",
                             pid: "2",
-                            name: "权限路由2-1",
+                            name: "Vue/Api",
                             path: "user2-1",
 
                         },
                         {
                             id: "2-2",
-                            name: "权限路由2-2",
+                            name: "Vue/router/Api",
                             pid: "2",
                             path: "user2-2",
                         },
                         {
                             id: "2-3",
-                            name: "权限路由2-3",
+                            name: "Vue/Vuex/Api",
                             pid: "2",
                             path: "user2-3"
                         }

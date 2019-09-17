@@ -42,9 +42,11 @@
       this.arr = JSON.parse(sessionStorage.getItem("routes")); //侧边路由
     },
     mounted() {
-      console.log(this.screenWidh);
-      if(this.screenWidh<760) this.isCollapse=true
-      if(this.screenWidh>760) this.isCollapse=false
+      console.log(this.msg,"leftCebian");
+      // console.log(this.screenWidh);
+      
+      if(this.screenWidh<760) this.isCollapse=true;
+      if(this.screenWidh>760) this.isCollapse=false;
       // this.pathName = JSON.parse(sessionStorage.getItem("path"))
       // console.log(this.$router.path);
       // const that=this;

@@ -6,6 +6,8 @@
                 <br>
                 <h4>组件传值</h4>
                 <div class="dv">
+                    <p>组件之间传值: this.$on("test",(v)=>{})  this.$emit("test","哈哈哈哈")</p>
+                    <p>通过$e传递两个组件之间的数据</p>
                     <p>父子组件传值: 父 => msg="Hello Vue" ===== 子 => props:{msg:String} / props:["msg"]</p>
                     <br>
                     <p>子父组件传值: 子 => this.$emit("myFather","这是传递给父组件的数据") ==== 父 => @myfather="show"
