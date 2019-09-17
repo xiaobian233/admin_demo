@@ -1,11 +1,12 @@
 <template>
     <div id="user1-3">
-        <h3 style="color:red;margin:15px 0;">对象开始原型指向 obj->显性 prototype(原型链) -> function.prototype (显式原型链) </h3>
-        <h3 style="color:red;margin:15px 0;">对象开始原型指向 obj->隐性 _proto_(原型) -> function._proto_ (原型) -> object._proto_
-            (原型) -> null </h3>
+        <!-- <h3 style="color:red;margin:15px 0;">对象开始原型指向 obj->显性 prototype(原型链) -> function.prototype (显式原型链) </h3>
+        <h3 style="color:red;margin:15px 0;">对象开始原型指向 obj->隐性 _proto_(原型) -> function._proto_ (原型) -> object._proto_ -->
+        <!-- (原型) -> null </h3> -->
+        <!-- <img :src="url" alt=""> -->
         <h2>这个请看本地script标签里面</h2>
         <br>
-        <h3>1.有优雅的实现深拷贝 </h3>
+        <h3>1.实现深拷贝 </h3>
         <br>
         <p>// 基本版本 : JSON.parse(JSON.string(obj))</p>
         <p>// 优雅实现请log</p>
@@ -45,9 +46,11 @@
         <br>
         <h3>10.九九乘法表--/--冒泡排序</h3>
         <br>
-
-
-
+        <h3>11.写一个异步sleep暂停函数</h3>
+        <br>
+        <h3>12.节流防抖函数实现</h3>
+        <br>
+        <h3>window.close() 可以直接关闭页面(window.open打开的页面)</h3>
 
 
 
@@ -66,6 +69,11 @@
 
 <script>
     export default {
+        data() {
+            return {
+                url: 'file:///D:/%E6%80%BB%E7%BB%93/%E5%A4%8D%E4%B9%A0%E9%83%A8%E5%88%86/%E9%9D%A2%E8%AF%95%E5%BF%85%E7%9C%8B/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E4%B9%8B%E9%81%93/3%E3%80%81JS%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9%E5%8F%8A%E5%B8%B8%E8%80%83%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89_files/1%20[5]'
+            }
+        },
         // Function.protoyype.mybind = ctx => {
         //     if (typeof this !== 'function') throw new TptyError("not is function")
         //     let that = this;
@@ -287,24 +295,23 @@
                     console.log(f11.area = "9999");
                     console.log(f11.area);
 
-
                 },
-                ten:()=>{
+                ten: () => {
                     // 1 顺序 99
-                    let str=``;
-                    for(let i=0;i<=9;i++){
-                        for(let j=1;j<=i;j++){
-                            str+=`${i}*${j}=${j*i}`
+                    let str = ``;
+                    for (let i = 0; i <= 9; i++) {
+                        for (let j = 1; j <= i; j++) {
+                            str += `${i}*${j}=${j * i}`
                         }
-                        str+=`\n`
+                        str += `\n`
                     }
                     console.log(str);
                     // 2 冒泡排序
-                    let arr=[19,364,4,123,7,456,]
-                    for(let i=0;i<arr.length;i++){
-                        for(let j=0;j<arr.length-i-1;j++){
-                            if(arr[j]>arr[j+1]){
-                                [arr[j],arr[j+1]]=[arr[j+1],arr[j]]
+                    let arr = [19, 364, 4, 123, 7, 456,]
+                    for (let i = 0; i < arr.length; i++) {
+                        for (let j = 0; j < arr.length - i - 1; j++) {
+                            if (arr[j] > arr[j + 1]) {
+                                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
                             }
                         }
                     }
@@ -319,7 +326,48 @@
 
 
                 },
+                eleven: () => {
+                    const sleep = (time) => {
+                        return new Promise((res, rej) => {
+                            setTimeout(() => { res(`${time}毫秒:ok`) }, time)
+                        })
+                    }
+                    (async () => {
+                        await sleep(5000).then((val) => { console.log(val) })
+                    })()
+                },
+                twelve: () => {
+                    // 节流 没有测试
+                    function debouce() {
+                        let times = null;
+                        return () => {
+                            try {
+                                if (!times) clearInterval(times)
+                                times = setTimeout(() => {
+                                    times = null
+                                    console.log('节流');
+                                }, 5000)
+                            } catch{
+                            }
+                        }
+                    }
+                    debouce()()
+                    // 防抖 没有测试
+                    function antiShake() {
+                        let a = true;
+                        return event = () => {
+                            if (!a) clearTimeout(time)
+                            a = false;
+                            let time = setTimeout(() => {
+                                a = true;
+                                console.log("防抖");
+                            }, 5000)
+                        }
+                    }
+                    antiShake()()
 
+
+                }
             }
             await obj.one()
             await obj.two()   
@@ -331,6 +379,9 @@
             await obj.eight()
             await obj.nine()
             await obj.ten()
+            await obj.eleven()
+            await obj.twelve()
+
 
 
         }
