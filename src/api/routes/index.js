@@ -20,7 +20,7 @@ export const users = (obj) => {
                         },
                         {
                             id: "1-2",
-                            name: "vue-echarts/echarts使用",
+                            name: "vue-echarts/echarts/betterScroll",
                             pid: "1",
                             path: "user1-2",
                         },

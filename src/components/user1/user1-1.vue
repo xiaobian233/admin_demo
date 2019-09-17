@@ -146,6 +146,8 @@
                 <br>
                 <h4><a href="https://www.bilibili.com/video/av60676047/?p=4" style="color:red">Vue.config.js ===>
                         (视频跳转页面)</a></h4>
+                        <br>
+                        <h4><a href="https://blog.csdn.net/weixin_34235457/article/details/91375759">Vue.config.js完整配置项</a></h4>
                 <div class="dv">
                     <p>module.exports = {</p>
                     <div style="margin: 0 0 0 25px; ">
