@@ -7,7 +7,7 @@ export const users = (obj) => {
             oo = [
                 {
                     id: "1",
-                    name: "基本复习",
+                    name: "基本资料",
                     path: "user1",
                     icon: "el-icon-menu",
                     children: [
@@ -102,7 +102,7 @@ export const users = (obj) => {
                 {
                     id: "1",
                     path: "user1",
-                    name: "基本复习",
+                    name: "基本资料",
                     icon: "el-icon-menu",
                     children: [
                         {
