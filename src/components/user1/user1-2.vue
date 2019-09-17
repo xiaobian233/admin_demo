@@ -18,8 +18,8 @@
         <div id="bge_carl"></div>
         <br>
         <h3>echarts社区图 == 没得背景画布</h3>
-        <div id="background"  :style="style" ref="background"></div>
-        <br>    
+        <div id="background" :style="style" ref="background"></div>
+        <br>
         <h3>better-scroll使用----手机查看</h3>
         <div class="better-scroll">
             <div class="wrapper" ref="wrapper">
@@ -76,11 +76,11 @@
                 }]
             },
                 this.$chart.line1('chart1');
-                this.$chart.pie("dv")
-                this.$chart.historam("zhuang")
-                this.$chart.punch("punch")
-                this.$chart.bge_carl("bge_carl")
-                this.$chart.background("background")
+            this.$chart.pie("dv")
+            this.$chart.historam("zhuang")
+            this.$chart.punch("punch")
+            this.$chart.bge_carl("bge_carl")
+            this.$chart.background("background")
 
 
             this._initScroll();

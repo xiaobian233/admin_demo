@@ -25,7 +25,7 @@
         <br>
         <h3>7.获取图片的原始宽高 </h3>
         <br>
-        <h3>8.实现instanceof <===>实现的原理就是 在原型上判断他们的类型 如果类型一眼则 返回true 不一样返回false;</h3>
+        <h3>8.实现instanceof <===>实现的原理就是 在原型上判断他们的类型 如果类型一样则 返回true 不一样返回false;</h3>
         <br>
         <h3>数组迭代的方法:</h3>
         <div style="margin: 0 0 0 25px">
@@ -51,10 +51,6 @@
         <h3>12.节流防抖函数实现</h3>
         <br>
         <h3>window.close() 可以直接关闭页面(window.open打开的页面)</h3>
-
-
-
-
 
 
 
@@ -224,7 +220,7 @@
                     console.log(imgAsync(require("../../assets/img/img.jpg")), "获取图片的原始高度");
                 },
                 eight: () => {
-                    //实现的原理就是 在原型上判断他们的类型 如果类型一眼则 返回true 不一样返回false;
+                    //实现的原理就是 在原型上判断他们的类型 如果类型一样则 返回true 不一样返回false;
                     const new_instanceof = (left, rights) => {
                         let rightProto = rights.prototype;
                         let leftValue = left._proto_;
@@ -381,8 +377,6 @@
             await obj.ten()
             await obj.eleven()
             await obj.twelve()
-
-
 
         }
     }
