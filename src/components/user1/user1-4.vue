@@ -1,5 +1,5 @@
 <template>
-  <div id="user1-4">
+  <div id="user1-4" style="margin: 0 25px;">
       <div class="dv">1.变量</div>
       <!-- ------------------------------------ -->
 
