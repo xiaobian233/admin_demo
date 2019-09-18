@@ -75,14 +75,12 @@
                     smooth: true
                 }]
             },
-                this.$chart.line1('chart1');
-            this.$chart.pie("dv")
-            this.$chart.historam("zhuang")
-            this.$chart.punch("punch")
-            this.$chart.bge_carl("bge_carl")
-            this.$chart.background("background")
-
-
+            this.$chart.line1('chart1');
+            this.$chart.pie("dv");
+            this.$chart.historam("zhuang");
+            this.$chart.punch("punch");
+            this.$chart.bge_carl("bge_carl");
+            this.$chart.background("background");
             this._initScroll();
         },
         methods: {

@@ -130,27 +130,11 @@
                     <p style="color:blue;">上传git的时候 == .gitignore 里面可以配置不需要上传的文件</p>
                 </div>
                 <br>
-                <h4 @touchstart='touchStart' @touchmove.stop.pervent="touchmove" @touchend.stop.prevent="touchend">
-                    vue/router</h4>
-                <div class="dv">
-                    <p>import home from "@/view/home" //@ == src</p>
-                    <p>路由懒加载: ()=> import ("./home")</p>
-                    <div style="margin: 0 0 0 25px; ">
-                        <p>beforeEach <p>
-                                <p>beforeRouteUpdate </p>
-                                <p>beforeEnter </p>
-                                <p>beforeRouteEnter </p>
-                                <p>beforeResolve</p>
-                                <p>afterEach</p>
-                                <p>DOM更新完后触发回调 this.$nextTick(){ } / 使用类似于 mounted(){}</p>
-                                <p>beforeRouteLeave</p>
-                    </div>
-                </div>
-                <br>
+               
                 <h4><a href="https://www.bilibili.com/video/av60676047/?p=4" style="color:red">Vue.config.js ===>
                         (视频跳转页面)</a></h4>
                 <br>
-                <h4><a href="https://blog.csdn.net/weixin_34235457/article/details/91375759" style="color:red">Vue.config.js完整配置项</a></h4>
+                <h4><a href="https://blog.csdn.net/weixin_34235457/article/details/91375759" style="color:red">Vue.config.js ===> 完整配置项</a></h4>
                 <div class="dv">
                     <p>module.exports = {</p>
                     <div style="margin: 0 0 0 25px; ">
@@ -206,20 +190,7 @@
 
 <script>
     export default {
-        methods: {
-            touchStart($e) {
-                console.log(111);
-                console.log($e.targetTouches[0].clientY, 222);
-            },
-            touchmove() {
-                console.log(333);
-
-            },
-            touchend() {
-                console.log(444);
-
-            }
-        },
+       
     }
 </script>
 //scoped 类似于添加了一个类 / 使用了交集选择器

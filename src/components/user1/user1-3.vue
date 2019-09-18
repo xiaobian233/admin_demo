@@ -4,6 +4,11 @@
         <h3 style="color:red;margin:15px 0;">对象开始原型指向 obj->隐性 _proto_(原型) -> function._proto_ (原型) -> object._proto_ -->
         <!-- (原型) -> null </h3> -->
         <!-- <img :src="url" alt=""> -->
+        <br>
+        <h3>{}->_proto_->constructor->prototype->自身_proto_</h3>
+        <br>
+        <h3>{}->_proto_->constructor->_proto_->Object(prototype)->null</h3>
+        <br>
         <h2>这个请看本地script标签里面</h2>
         <br>
         <h3>1.实现深拷贝 </h3>

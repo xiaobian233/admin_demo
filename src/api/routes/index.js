@@ -7,7 +7,7 @@ export const users = (obj) => {
             oo = [
                 {
                     id: "1",
-                    name: "基本资料",
+                    name: "配置项",
                     path: "user1",
                     icon: "el-icon-menu",
                     children: [
@@ -102,7 +102,7 @@ export const users = (obj) => {
                 {
                     id: "1",
                     path: "user1",
-                    name: "基本资料",
+                    name: "配置项",
                     icon: "el-icon-menu",
                     children: [
                         {
@@ -147,13 +147,13 @@ export const users = (obj) => {
                         },
                         {
                             id: "2-2",
-                            name: "Vue/router/Api",
+                            name: "user2-2",
                             pid: "2",
                             path: "user2-2",
                         },
                         {
                             id: "2-3",
-                            name: "Vue/Vuex/Api",
+                            name: "user2-3",
                             pid: "2",
                             path: "user2-3"
                         }
