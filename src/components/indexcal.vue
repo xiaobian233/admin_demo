@@ -28,6 +28,7 @@
 
 <script>
     import leftCebian from "../views/leftCebian"
+    import bus from "../main.js"
     export default {
         data() {
             return {
@@ -44,15 +45,13 @@
                 }
             }
         },
+        created(){},
         mounted() {
             // let user=
             let { name, img } = JSON.parse(sessionStorage.getItem("user"))
             this.user.name = name.split(":")[1];
             img=img.split(".")[0]+'.'+img.split(".")[2]
             this.imgs.backgroundImage ="url("+ require("../assets"+img)+")"; 
-            // console.log(this.$refs.span3.style);
-            // this.user.img = require("../static"+img); 
-
         },
         methods: {
             remove() {

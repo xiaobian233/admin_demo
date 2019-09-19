@@ -13,7 +13,7 @@ Vue.use(ElementUI);
 Vue.prototype.$message = new DonMessage()
 
 //使用axios
-Vue.prototype.$axios=axios
+Vue.prototype.$axios = axios
 
 //vue-echarts
 import ECharts from 'vue-echarts'
@@ -22,14 +22,14 @@ Vue.component('chart', ECharts)
 
 //echarts
 import myCharts from "./static/echarts"
-Vue.use(myCharts )
+Vue.use(myCharts)
 
 Vue.config.productionTip = false   //取消生产提示
-new Vue({
+const bus = new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
 
-
+export {bus}
 

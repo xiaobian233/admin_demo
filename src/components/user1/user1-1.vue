@@ -190,7 +190,6 @@
 
 <script>
     export default {
-       
     }
 </script>
 //scoped 类似于添加了一个类 / 使用了交集选择器

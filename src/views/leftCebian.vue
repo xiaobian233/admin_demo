@@ -26,6 +26,7 @@
 </template>
 
 <script>
+  import {bus} from '../main.js'
   export default {
     data() {
       return {
@@ -42,7 +43,7 @@
       this.arr = JSON.parse(sessionStorage.getItem("routes")); //侧边路由
     },
     mounted() {
-      console.log(this.msg,"leftCebian");
+      // console.log(this.msg,"leftCebian");
       // console.log(this.screenWidh);
       
       if(this.screenWidh<760) this.isCollapse=true;
@@ -60,6 +61,7 @@
       handleOpen(key, keyPath) {
         // console.log(key, keyPath);
         this.$emit("myfather",key)
+        bus.$emit("test","this is leftCebian")
       },
       handleClose(key, keyPath) {
         // console.log(key, keyPath);
