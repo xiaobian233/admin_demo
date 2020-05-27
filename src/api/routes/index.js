@@ -1,3 +1,7 @@
+const adminRouetr=[];
+
+
+
 export const users = (obj) => {
     if (!obj.token) return this.$message.error('请重新登录...');
     let oo = [];
@@ -242,6 +246,11 @@ export const users = (obj) => {
                 }
             ]
             break;
+        case "myadmin":
+            oo=adminRouetr;
+            break;
+        
     }
     return oo;
 }
+

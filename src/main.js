@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import axios from "axios"
+
 //element 
 import 'element-ui/lib/theme-chalk/index.css';
 import ElementUI from 'element-ui';
@@ -11,6 +12,10 @@ import DonMessage from "./static/modification"
 Vue.use(ElementUI);
 //取消多次弹框
 Vue.prototype.$message = new DonMessage()
+
+//全局jquery
+import $ from "jquery";
+Vue.prototype.$=$;
 
 //使用axios
 Vue.prototype.$axios = axios
